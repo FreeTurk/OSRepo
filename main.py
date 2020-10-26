@@ -2,9 +2,8 @@ print("Checking for updates...")
 
 import requests
 import time
-
-link = "https://pastebin.pl/view/raw/8ddf797b"
-f = requests.get(link)
+import json
+import webbrowser
 
 print("                                                                                                                  ")
 print("                                                                                                                  ")
@@ -32,13 +31,17 @@ print("                                                                         
 print("                                                                             ppppppppp                            ")
 print("                                                                                                                  ")
 
+
+
 print("WELCOME TO THE BIGGEST REPO OF OPERATING SYSTEMS!")
 print("HERE, YOU WILL FIND A GREAT SELECTION OF OPERATING SYSTEMS, ALL HAND PICKED!")
 print("This is a dumb project, made by the priceless efforts of FreeTurk")
 print("")
+
 print("Throughout this script, you will be presented with a series of options.")
 print("Select accordingly, you have to know the category if you want the OS.")
 print("")
+
 print("Now, please select the type of your OS from the options of (case sensitive)")
 print("*nix")
 print("WindowsNT")
@@ -55,5 +58,19 @@ if os_type == "*nix":
     nix_type = input()
     if nix_type == "Linux":
         print("A list of operating systems will come up, this may/should lag...")
-        time.sleep(10)
+        time.sleep(2)
+        with open('linuxmain.json', 'r') as f:
+            linux_dict = json.load(f)
 
+        for linux_distro in linux_dict:
+            print(linux_distro['Name'])
+
+        linux_input = input("What OS do you want?")
+
+        for linux_distro in linux_dict:
+            print(linux_distro[linux_input + " Versions"])
+
+        linux_ver_input = input("What version..?")
+
+        for linux_distro in linux_dict:
+            webbrowser.open(linux_distro[linux_input + " " + linux_ver_input])
