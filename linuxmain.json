@@ -1,20 +1,37 @@
-[
+{
+  "linux":
   {
-    "Name": "Source Mage",
-    "Source Mage Versions": ["0.10.0", "0.9.6", "0.9.5"],
-    "Source Mage 0.10.0": "http://mirror.sobukus.de/files/sourcemage/iso/x86/0.10.0/smgl-0.10.0.iso.bz2",
-    "Source Mage 0.9.6": "http://mirror.sobukus.de/files/sourcemage/iso/x86/0.9.6/smgl-0.9.6.1-x86.iso.bz2",
-    "Source Mage 0.9.5": "http://mirror.sobukus.de/files/sourcemage/iso/x86/0.9.5/smgl-0.9.5-i486.iso.bz2"
-  },
+    "Names": ["Source Mage", "CentOS"],
+    "Source Mage":
+    {
+      "versions": [
+      "0.10.0",
+      "0.9.6",
+      "0.9.5"
+    ],
+      "0.10.0": "http://mirror.sobukus.de/files/sourcemage/iso/x86/0.10.0/smgl-0.10.0.iso.bz2",
+      "0.9.6": "http://mirror.sobukus.de/files/sourcemage/iso/x86/0.9.6/smgl-0.9.6.1-x86.iso.bz2",
+      "0.9.5": "http://mirror.sobukus.de/files/sourcemage/iso/x86/0.9.5/smgl-0.9.5-i486.iso.bz2"
+    },
+    "CentOS":
   {
-    "Name": "CentOS",
-    "CentOS Versions": ["x86_64 8", "aarch64 8", "ppc64le 8", "x86_64 7", "aarch64 7", "ppc64le 7", "x86_64 6.10"],
-    "CentOS x86_64 8": "http://ftp.linux.org.tr/centos/8.2.2004/isos/x86_64/",
-    "CentOS aarch64 8": "http://ftp.linux.org.tr/centos/8.2.2004/isos/aarch64/",
-    "CentOS ppc64le 8": "http://ftp.linux.org.tr/centos/8.2.2004/isos/ppc64le/",
-    "CentOS x86_64 7": "http://ftp.linux.org.tr/centos/7.8.2003/isos/x86_64/",
-    "CentOS aarch64 7": "http://ftp.rz.uni-frankfurt.de/pub/mirrors/centos-altarch/7.8.2003/isos/aarch64/",
-    "CentOS ppc64le 7": "http://ftp.rz.uni-frankfurt.de/pub/mirrors/centos-altarch/7.8.2003/isos/ppc64le/",
-    "CentOS x86_64 6.10": "http://ftp.linux.org.tr/centos/6.10/isos/x86_64/"
+    "versions": [
+          "x86_64 8",
+          "aarch64 8",
+          "ppc64le 8",
+          "x86_64 7",
+          "aarch64 7",
+          "ppc64le 7",
+          "x86_64 6.10"
+        ],
+    "x86_64 8": "http://ftp.linux.org.tr/centos/8.2.2004/isos/x86_64/",
+    "aarch64 8": "http://ftp.linux.org.tr/centos/8.2.2004/isos/aarch64/",
+    "ppc64le 8": "http://ftp.linux.org.tr/centos/8.2.2004/isos/ppc64le/",
+    "x86_64 7": "http://ftp.linux.org.tr/centos/7.8.2003/isos/x86_64/",
+    "aarch64 7": "http://ftp.rz.uni-frankfurt.de/pub/mirrors/centos-altarch/7.8.2003/isos/aarch64/",
+    "ppc64le 7": "http://ftp.rz.uni-frankfurt.de/pub/mirrors/centos-altarch/7.8.2003/isos/ppc64le/",
+    "x86_64 6.10": "http://ftp.linux.org.tr/centos/6.10/isos/x86_64/"
   }
-]
+  }
+
+}
