@@ -14,8 +14,8 @@ For legal reasons and storage constraints, this script only auto-opens the URL t
 
 There should be a Patreon link around here somewhere if this ever blows up to be successful. If it did not, no coffee for me.
 
--[x] Done sample code to work on.
--[ ] Added a big library of OSs.
--[ ] Polished README.md
--[ ] Lifelessly copy and paste repo links of different OSs.
--[ ] Find obscure OSs for weird people.
+- [x] Done sample code to work on.
+- [ ] Added a big library of OSs.
+- [ ] Polished README.md
+- [ ] Lifelessly copy and paste repo links of different OSs.
+- [ ] Find obscure OSs for weird people.
