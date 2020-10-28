@@ -46,7 +46,12 @@ print("Apple")
 print("Legendary")
 os_type = input()
 
-if os_type == "*nix":
+if os_type == "WindowsNT":
+    print("PLease Wait...")
+    import winnt
+
+
+elif os_type == "*nix":
     print("Select from below options")
     print("Linux")
     print("Unix")

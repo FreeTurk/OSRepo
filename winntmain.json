@@ -1,0 +1,14 @@
+{
+  "winnt": {
+    "Names": [
+      "3.51",
+      "4"
+    ],
+    "3.51": {
+      "link": "https://winworldpc.com/download/9c67f2a9-a8ec-11ea-8b3c-fa163e9022f0/from/c3ae6ee2-8099-713d-3411-c3a6e280947e"
+    },
+    "4": {
+      "link": "https://winworldpc.com/download/416031c2-ab18-c39a-11c3-a4e284a2c3a5/from/c3ae6ee2-8099-713d-3411-c3a6e280947e"
+    }
+  }
+}
