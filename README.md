@@ -16,6 +16,6 @@ There should be a Patreon link around here somewhere if this ever blows up to be
 
 - [x] Done sample code to work on.
 - [ ] Added a big library of OSs.
-- [ ] Polished README.md
+- [x] Polished README.md
 - [ ] Lifelessly copy and paste repo links of different OSs.
 - [ ] Find obscure OSs for weird people.

@@ -8,4 +8,4 @@ print(apple_dict["apple"]["Names"])
 
 input = input("What OS do you want?")
 
-webbrowser(apple_dict["apple"][input]["link"])
+webbrowser.open(apple_dict["apple"][input]["link"])

@@ -1,6 +1,53 @@
 {
   "apple": {
     "Names": [
-    ]
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "Server 1.0",
+      "10.0 PPC",
+      "10.1 PPC",
+      "10.2 PPC",
+      "10.3 PPC"
+    ],
+    "1": {
+      "link": "https://winworldpc.com/download/2d0fdb45-d5ff-11e7-a73f-fa163e9022f0/from/c3ae6ee2-8099-713d-3411-c3a6e280947e"
+    },
+    "2": {
+      "link": "https://winworldpc.com/download/2ee8da4a-d602-11e7-a73f-fa163e9022f0/from/c3ae6ee2-8099-713d-3411-c3a6e280947e"
+    },
+    "3": {
+      "link": "https://winworldpc.com/download/596c0afd-d604-11e7-a73f-fa163e9022f0/from/c3ae6ee2-8099-713d-3411-c3a6e280947e"
+    },
+    "7": {
+      "link": "https://winworldpc.com/download/c3b6c380-5fc3-a23f-c2ae-11c3a6e28094/from/c3ae6ee2-8099-713d-3411-c3a6e280947e"
+    },
+    "8": {
+      "link": "https://winworldpc.com/download/a655424a-e64b-11e8-9b71-fa163e9022f0/from/c3ae6ee2-8099-713d-3411-c3a6e280947e"
+    },
+    "9": {
+      "link": "https://winworldpc.com/download/3dc3a37f-6518-c39a-11c3-a4e284a2c3a5/from/c3ae6ee2-8099-713d-3411-c3a6e280947e"
+    },
+    "10.0 PPC": {
+      "link": "https://winworldpc.com/download/3e20e280-a0c3-9718-c39a-11c3a4e284a2/from/c3ae6ee2-8099-713d-3411-c3a6e280947e"
+    },
+    "10.1 PPC": {
+      "link": "https://winworldpc.com/download/3dc3a60a-2c18-c39a-11c3-a4e284a2c3a5/from/c3ae6ee2-8099-713d-3411-c3a6e280947e"
+    },
+    "10.2 PPC": {
+      "link": "https://winworldpc.com/download/7d214cc5-bde2-809e-e280-a611c3a4c2ac/from/c3ae6ee2-8099-713d-3411-c3a6e280947e"
+    },
+    "10.3 PPC": {
+      "link": "https://linkmix.co/1489265"
+    },
+    "Server 1.0": {
+      "link": "https://winworldpc.com/download/3dc39d24-c2bb-18c3-9a11-c3a4e284a2ef/from/c3ae6ee2-8099-713d-3411-c3a6e280947e"
+    }
   }
 }
