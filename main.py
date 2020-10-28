@@ -59,3 +59,7 @@ elif os_type == "*nix":
     nix_type = input()
     if nix_type == "Linux":
         import linux
+
+elif os_type == "Apple":
+    print("Please Wait...")
+    import apple
