@@ -38,20 +38,28 @@ print("Throughout this script, you will be presented with a series of options.")
 print("Select accordingly, you have to know the category if you want the OS.")
 print("")
 
-print("Now, please select the type of your OS from the options of (case sensitive)")
-print("*nix")
-print("WindowsNT")
-print("WindowsDOS")
-print("Apple")
-print("Legendary")
+print("Now, please select the type of your OS from the options of (Just write the number): ")
+print("1. *nix")
+print("2. WindowsNT")
+print("3. WindowsDOS")
+print("4. Apple")
+print("5. Legendary/Others")
 os_type = input()
 
-if os_type == "WindowsNT":
+if os_type == "2":
     print("PLease Wait...")
     import winnt
 
+elif os_type == "3":
+    print("Please Wait...")
+    import windos
 
-elif os_type == "*nix":
+elif os_type == "5":
+    print("Please Wait...")
+    import legendary
+
+
+elif os_type == "1":
     print("Select from below options")
     print("Linux")
     print("Unix")
@@ -59,7 +67,11 @@ elif os_type == "*nix":
     nix_type = input()
     if nix_type == "Linux":
         import linux
+    elif nix_type == "Unix":
+        import unix
+    elif nix_type == "BSD":
+        import bsd
 
-elif os_type == "Apple":
+elif os_type == "4":
     print("Please Wait...")
     import apple
