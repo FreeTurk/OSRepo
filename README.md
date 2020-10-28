@@ -19,3 +19,9 @@ There should be a Patreon link around here somewhere if this ever blows up to be
 - [x] Polished README.md
 - [ ] Lifelessly copy and paste repo links of different OSs.
 - [ ] Find obscure OSs for weird people.
+
+**ANY INDEPENDENT OS DEVELOPERS**
+
+**I'm planning this project to also be community driven. Because of that, I will open a category in near future that will be called "Community". This will be a place for all independent creators to show off their work.**
+
+**If you want to show off your work, create an issue on this project with an appropriate title and a direct download link. Google Drive and Mediafire are the best options.**
