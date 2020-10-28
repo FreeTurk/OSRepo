@@ -56,7 +56,7 @@ elif os_type == "3":
 
 elif os_type == "5":
     print("Please Wait...")
-    import legendary
+    import others
 
 
 elif os_type == "1":
