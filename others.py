@@ -1,7 +1,7 @@
 import webbrowser
 import json
 
-with open('others.py', 'r') as enough:
+with open('others.json', 'r') as enough:
     others_dict = json.load(enough)
 
 print(others_dict["others"]["Names"])
