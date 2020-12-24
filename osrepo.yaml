@@ -55,6 +55,8 @@ os:
     MacOS 11:
       11 PB1:
         link: 'https://download2329.mediafire.com/uvmcvoygiq7g/vuxhn73malcin7w/macOS+Big+Sur+Beta+11.0+%2820A5343j%29.iso'
+      11.0.1:
+        link: 'http://www.mediafire.com/file/dbfod9u5q9ii9nd/macOS_Big_Sur_11.0.1_%252820B29%2529.iso/file'
     other:
       Server 1.0:
         link: 'https://winworldpc.com/download/3dc39d24-c2bb-18c3-9a11-c3a4e284a2ef/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
