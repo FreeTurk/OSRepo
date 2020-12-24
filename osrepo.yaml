@@ -1,0 +1,197 @@
+os:
+  MacOS:
+    TYPE: os_list
+    1:
+      link: 'https://winworldpc.com/download/2d0fdb45-d5ff-11e7-a73f-fa163e9022f0/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
+    2:
+      link: 'https://winworldpc.com/download/2ee8da4a-d602-11e7-a73f-fa163e9022f0/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
+    3:
+      link: 'https://winworldpc.com/download/596c0afd-d604-11e7-a73f-fa163e9022f0/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
+    4:
+      link: 'https://winworldpc.com/download/4ecf1e22-d60b-11e7-a73f-fa163e9022f0/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
+    5:
+      link: 'https://winworldpc.com/download/fc4bafb8-d612-11e7-a73f-fa163e9022f0/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
+    6:
+      link: 'https://winworldpc.com/download/e91b7a2b-d7aa-11e7-a73f-fa163e9022f0/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
+    7:
+      link: 'https://winworldpc.com/download/c3b6c380-5fc3-a23f-c2ae-11c3a6e28094/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
+    8:
+      link: 'https://winworldpc.com/download/a655424a-e64b-11e8-9b71-fa163e9022f0/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
+    9:
+      link: 'https://winworldpc.com/download/3dc3a37f-6518-c39a-11c3-a4e284a2c3a5/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
+    10.0 PPC:
+      link: 'https://winworldpc.com/download/3e20e280-a0c3-9718-c39a-11c3a4e284a2/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
+    10.1 PPC:
+      link: 'https://winworldpc.com/download/3dc3a60a-2c18-c39a-11c3-a4e284a2c3a5/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
+    10.2 PPC:
+      link: 'https://winworldpc.com/download/7d214cc5-bde2-809e-e280-a611c3a4c2ac/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
+    10.3 PPC:
+      link: 'https://linkmix.co/1489265'
+    10.4 PPC:
+      link: 'https://archive.org/download/macosx10.4tigerretaildvd/Mac%20OS%20X%2010.4%20Tiger%20Retail%20DVD.iso'
+    10.5:
+      link: 'https://archive.org/download/OsxLeopardInstall/osx%20leopard%20install.iso'
+    10.6:
+      link: 'https://archive.org/download/SnowLeopardInstall/snow%20leopard%20install.iso'
+    10.7:
+      link: 'https://5-9-2-202.xyz/themacgo/Mac_OS_X_Lion_10.7.2.dmg?md5=tsQQWOMla_pMDIBndu252Q&expires=1603996939'
+    10.8:
+      link: 'https://ovh.sundryfiles.com/rK?download_token=d3b64cf6a070d4e529b243b2f30a44a006b341318dcd7fea4cbf16c34913b3ed'
+    10.9:
+      link: 'https://archive.org/download/OSXMavericksESD/%5BOSX%5D%20Mac%20OS%20X%2010.9.4%20Mavericks%20ESD.dmg'
+    10.10:
+      link: 'https://download213.xyz/MAC/Yosemite_10.10.3.dmg'
+    10.11:
+      link: 'http://updates-http.cdn-apple.com/2019/cert/061-41424-20191024-218af9ec-cf50-4516-9011-228c78eda3d2/InstallMacOSX.dmg'
+    10.12:
+      link: 'https://doc-0g-8k-docs.googleusercontent.com/docs/securesc/3c0uf8g5jscfbd977166g7nqsqsf631h/pn902b8psvi37nnfrt3aqp7c06gj52ta/1603878000000/15800933291929286564/03735844687554694997/19nLfflguts5X-xci_F3RK4dz3z020vGz?e=download&authuser=0&nonce=ardceav7prla2&user=03735844687554694997&hash=t47qbsnphbcis2aoh76jo4juhgtp74q9'
+    10.13:
+      link: 'http://download2345.mediafire.com/cp4x4i0cyt2g/4wuy42ubh7i41x0/macOS+High+Sierra+DMG+by+Geekrar.rar'
+    10.14:
+      link: 'https://isoriver.com/download-your-file-now/?url=https://archive.org/download/macOS_Mojave/macOS_Mojave.dmg'
+    10.15:
+      link: 'https://isoriver.com/download-your-file-now/?url=https://soft.uclv.edu.cu/isos/MacOS/macOS_Catalina_10.15_19A583.dmg'
+    11 PB1:
+      link: 'https://download2329.mediafire.com/uvmcvoygiq7g/vuxhn73malcin7w/macOS+Big+Sur+Beta+11.0+%2820A5343j%29.iso'
+    Server 1.0:
+      link: 'https://winworldpc.com/download/3dc39d24-c2bb-18c3-9a11-c3a4e284a2ef/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
+    AUX 1:
+      link: 'https://winworldpc.com/download/c2bf03e2-809a-04c3-b9c3-8a11c3a6c2bb/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
+    AUX 2:
+      link: 'https://winworldpc.com/download/3e41e284-a238-18c3-9a11-c3a4e284a2ef/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
+    AUX 3:
+      link: 'https://winworldpc.com/download/3e100254-18c3-9a11-c3a4-e284a2c3a570/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
+  BSD:
+    TYPE: os_list
+    FreeBSD:
+      link: 'https://download.freebsd.org/ftp/releases/ISO-IMAGES/12.2/'
+    OpenBSD:
+      link: 'https://www.openbsd.org/faq/faq4.html#Download'
+    LibertyBSD:
+      link: 'https://pub.allbsd.org/LibertyBSD/6.1/amd64/'
+    NetBSD:
+      link: 'https://www.netbsd.org'
+    DragonFlyBSD:
+      link: 'http://mirror-master.dragonflybsd.org/iso-images/dfly-x86_64-5.8.3_REL.iso'
+    TrueOS:
+      link: 'https://sourceforge.net/projects/archiveos/files/t/trueos/TrueOS-Desktop-18.03-x64-DVD.iso/download'
+    MidnightBSD:
+      link: 'https://www.midnightbsd.org/ftp/MidnightBSD/releases/'
+    m0n0wall:
+      link: 'https://m0n0.ch/wall/installation_cdrom.php'
+  linux:
+    TYPE: os_group
+    Source Mage:
+      TYPE: os_list
+      0.10.0:
+        link: 'http://mirror.sobukus.de/files/sourcemage/iso/x86/0.10.0/smgl-0.10.0.iso.bz2'
+      0.9.6:
+        link: 'http://mirror.sobukus.de/files/sourcemage/iso/x86/0.9.6/smgl-0.9.6.1-x86.iso.bz2'
+      0.9.5:
+        link: 'http://mirror.sobukus.de/files/sourcemage/iso/x86/0.9.5/smgl-0.9.5-i486.iso.bz2'
+    CentOS:
+      TYPE: os_list
+      x86_64 8:
+        link: 'http://ftp.linux.org.tr/centos/8.2.2004/isos/x86_64/'
+      aarch64 8:
+        link: 'http://ftp.linux.org.tr/centos/8.2.2004/isos/aarch64/'
+      ppc64le 8:
+        link: 'http://ftp.linux.org.tr/centos/8.2.2004/isos/ppc64le/'
+      x86_64 7:
+        link: 'http://ftp.linux.org.tr/centos/7.8.2003/isos/x86_64/'
+      aarch64 7:
+        link: 'http://ftp.rz.uni-frankfurt.de/pub/mirrors/centos-altarch/7.8.2003/isos/aarch64/'
+      ppc64le 7:
+        link: 'http://ftp.rz.uni-frankfurt.de/pub/mirrors/centos-altarch/7.8.2003/isos/ppc64le/'
+      x86_64 6.10:
+        link: 'http://ftp.linux.org.tr/centos/6.10/isos/x86_64/'
+    Pardus:
+      TYPE: os_list
+      17.5 DDE:
+        link: 'http://indir.pardus.org.tr/ISO/Pardus17/Pardus-17.5-DDE-amd64.iso'
+      17.5 UVD XFCE:
+        link: 'http://indir.pardus.org.tr/ISO/Pardus17/Pardus-17.5-LTS-XFCE-amd64.iso'
+      19.3 GNOME:
+        link: 'http://indir.pardus.org.tr/ISO/Pardus19/Pardus-19.3-GNOME-amd64.iso'
+      19.3 XFCE:
+        link: 'http://indir.pardus.org.tr/ISO/Pardus19/Pardus-19.3-XFCE-amd64.iso'
+      19.3 Server:
+        link: 'http://indir.pardus.org.tr/ISO/Pardus19/Pardus-19.3-SERVER-amd64.iso'
+      ETAP 5.2:
+        link: 'http://indir.pardus.org.tr/ISO/Etap/Pardus-ETAP-5.2-amd64.iso'
+    Live Raizo:
+      TYPE: os_list
+      11.20:
+        link: 'https://sourceforge.net/projects/live-raizo/files/Live-Raizo-v11.20.10.21p.iso/download'
+      10.19:
+        link: 'https://sourceforge.net/projects/live-raizo/files/Live-Raizo-v10.19.09.11p.iso/download'
+      9.18:
+        link: 'https://sourceforge.net/projects/live-raizo/files/Live-Raizo-v9.18.09.09p.iso/download'
+      8.17:
+        link: 'https://sourceforge.net/projects/live-raizo/files/Live-Raizo-v8.17.08.30p.iso/download'
+      7.16:
+        link: 'https://sourceforge.net/projects/live-raizo/files/Live-Raizo-v7.16.09.11p.iso/download'
+      6.15:
+        link: 'https://sourceforge.net/projects/live-raizo/files/Live-Raizo-v6.15.08.30p.iso/download'
+    Linux Lite:
+      TYPE: os_list
+      5.0:
+        link: 'https://osdn.net/frs/redir.php?m=dotsrc&f=%2Fstorage%2Fg%2Fl%2Fli%2Flinuxlite%2F5.0%2Flinux-lite-5.0-64bit.iso'
+  winnt:
+    TYPE: os_list
+    3.51:
+      link: 'https://winworldpc.com/download/9c67f2a9-a8ec-11ea-8b3c-fa163e9022f0/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
+    4:
+      link: 'https://winworldpc.com/download/416031c2-ab18-c39a-11c3-a4e284a2c3a5/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
+    2000:
+      link: 'https://winworldpc.com/download/413638c2-8d18-c39a-11c3-a4e284a2c3a5/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
+    Longhorn:
+      link: 'https://winworldpc.com/download/427424c3-9a18-c39a-11c3-a4e284a2c3a5/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
+    Neptune:
+      link: 'https://winworldpc.com/download/46c39b6a-7cc2-bbc3-9311-c3a4c2ac5a54/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
+    Whistler:
+      link: 'https://winworldpc.com/download/422f790a-18c3-9a11-c3a4-e284a2c3a570/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
+  other:
+    TYPE: os_list
+    ReactOS:
+      link: 'https://sourceforge.net/projects/reactos/files/latest/download'
+    Haiku:
+      link: 'https://cdn.haiku-os.org/haiku-release/r1beta2/haiku-r1beta2-x86_64-anyboot.zip'
+    Icaros:
+      link: 'http://www.icarosdesktop.com/icarosfiles/IcarosLive_2_2_8.zip'
+    MenuetOS:
+      link: 'http://www.menuetos.be/download.php?CurrentMenuetOS'
+    DexOS:
+      link: 'http://dex-os.github.io/DexOS.zip'
+    Visopsys:
+      link: 'https://visopsys.org/files/visopsys/visopsys-0.9-iso.zip'
+    FreeDOS:
+      link: 'http://www.freedos.org/download/download/FD12CD.iso'
+    Kolibri:
+      link: 'http://builds.kolibrios.org/eng/latest-distr.7z'
+    SkyOS:
+      link: 'https://drive.google.com/u/0/uc?export=download&confirm=qder&id=1iEIJl-KlXdDmnkXuMkE9sUFne7JVNWyy'
+    MorphOS:
+      link: 'https://www.morphos-team.net/morphos-3.14.iso'
+    PC-MOS:
+      link: 'https://winworldpc.com/download/40e28099-2fc3-ac18-c39a-11c3a4e284a2/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
+    OS/2 1.0:
+      link: 'https://winworldpc.com/download/c39463e2-809e-4016-c389-11c3a7cb86ef/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
+    OS/2 2.0:
+      link: 'https://winworldpc.com/download/226b07a0-66ca-11e8-a48f-fa163e9022f0/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
+    OS/2 3.0:
+      link: 'https://winworldpc.com/download/403bc2b5-c3bf-18c3-9a11-c3a4e284a2ef/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
+    OS/2 Warp 4:
+      link: 'https://winworldpc.com/download/404e6cc2-af18-c39a-11c3-a4e284a2c3a5/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
+    OS400:
+      link: 'https://winworldpc.com/download/82cd938f-98ab-11ea-8c4a-fa163e9022f0/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
+    GEOS:
+      link: 'https://winworldpc.com/download/4073c2af-6d18-c39a-11c3-a4e284a2c3a5/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
+    GEM 1:
+      link: 'https://winworldpc.com/download/7d2f5acb-864d-0411-c3a6-e280947e5254/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
+    GEM 3:
+      link: 'https://winworldpc.com/download/c3bdc39e-3ec2-a64d-0411-c3a6e280947e/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
+    Atari DOS:
+      link: 'https://winworldpc.com/download/46e282ac-7f53-c2b2-3711-c3a5c28f1352/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
+    BeOS:
+      link: 'https://winworldpc.com/download/4112c2a0-7118-c39a-11c3-a4e284a2c3a5/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
