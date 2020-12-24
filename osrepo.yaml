@@ -1,4 +1,5 @@
 os:
+  TYPE: os_repo
   MacOS:
     TYPE: os_list
     1:
