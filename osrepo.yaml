@@ -161,9 +161,9 @@ os:
       link: 'https://templeos.org/Downloads/TempleOS.ISO'
   Haiku:
     link: 'https://cdn.haiku-os.org/haiku-release/r1beta2/haiku-r1beta2-x86_64-anyboot.zip'
+  ReactOS:
+    link: 'https://sourceforge.net/projects/reactos/files/latest/download'
   other:
-    ReactOS:
-      link: 'https://sourceforge.net/projects/reactos/files/latest/download'
     Icaros:
       link: 'http://www.icarosdesktop.com/icarosfiles/IcarosLive_2_2_8.zip'
     MenuetOS:
