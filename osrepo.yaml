@@ -171,7 +171,6 @@ os:
     TempleOS:
       link: 'https://templeos.org/Downloads/TempleOS.ISO'
   Haiku:
-    TYPE: os_list
     link: 'https://cdn.haiku-os.org/haiku-release/r1beta2/haiku-r1beta2-x86_64-anyboot.zip'
   other:
     TYPE: os_list
