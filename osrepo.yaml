@@ -207,5 +207,5 @@ os:
       link: 'https://winworldpc.com/download/46e282ac-7f53-c2b2-3711-c3a5c28f1352/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
     BeOS:
       link: 'https://winworldpc.com/download/4112c2a0-7118-c39a-11c3-a4e284a2c3a5/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
- Android:
-  link: 'https://www.fosshub.com/Android-x86.html?dwl=android-x86_64-9.0-r2.iso'
+  Android:
+    link: 'https://www.fosshub.com/Android-x86.html?dwl=android-x86_64-9.0-r2.iso'
