@@ -82,6 +82,22 @@ os:
     m0n0wall:
       link: 'https://m0n0.ch/wall/installation_cdrom.php'
   linux:
+    Debian:
+      Mint:
+        XFCE:
+          link: 'http://mirrors.seas.harvard.edu/linuxmint/stable/20/linuxmint-20-xfce-64bit.iso'
+        MATE:
+          link: 'http://mirrors.seas.harvard.edu/linuxmint/stable/20/linuxmint-20-mate-64bit.iso'
+      Parrot:
+        link: 'https://download.parrot.sh/parrot/iso/4.10/Parrot-home-4.10_amd64.iso'
+      Ubuntu:
+        link: 'https://releases.ubuntu.com/20.04.1/ubuntu-20.04.1-desktop-amd64.iso?_ga=2.239646211.1857678125.1608827650-830861523.1608827650'
+      Kali:
+        link: 'https://images.kali.org/virtual-images/kali-linux-2020.4-vmware-amd64.7z'
+      PureOS:
+        link: 'https://downloads.pureos.net/amber/live/gnome/2020-08-06/pureos-9.0-gnome-live_20200806-amd64.hybrid.iso'
+      deepin:
+        link: 'http://cdimage.deepin.com/releases/20/deepin-desktop-community-1002-amd64.iso'
     Source Mage:
       0.10.0:
         link: 'http://mirror.sobukus.de/files/sourcemage/iso/x86/0.10.0/smgl-0.10.0.iso.bz2'
@@ -187,6 +203,20 @@ os:
       link: 'https://www.morphos-team.net/morphos-3.14.iso'
     PC-MOS:
       link: 'https://winworldpc.com/download/40e28099-2fc3-ac18-c39a-11c3a4e284a2/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
+    GEOS:
+      link: 'https://winworldpc.com/download/4073c2af-6d18-c39a-11c3-a4e284a2c3a5/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
+    GEM:
+      GEM 1:
+        link: 'https://winworldpc.com/download/7d2f5acb-864d-0411-c3a6-e280947e5254/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
+      GEM 3:
+        link: 'https://winworldpc.com/download/c3bdc39e-3ec2-a64d-0411-c3a6e280947e/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
+    Atari DOS:
+      link: 'https://winworldpc.com/download/46e282ac-7f53-c2b2-3711-c3a5c28f1352/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
+    BeOS:
+      link: 'https://winworldpc.com/download/4112c2a0-7118-c39a-11c3-a4e284a2c3a5/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
+  Android:
+    link: 'https://www.fosshub.com/Android-x86.html?dwl=android-x86_64-9.0-r2.iso'
+  IBM:
     OS/2 1.0:
       link: 'https://winworldpc.com/download/c39463e2-809e-4016-c389-11c3a7cb86ef/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
     OS/2 2.0:
@@ -197,15 +227,3 @@ os:
       link: 'https://winworldpc.com/download/404e6cc2-af18-c39a-11c3-a4e284a2c3a5/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
     OS400:
       link: 'https://winworldpc.com/download/82cd938f-98ab-11ea-8c4a-fa163e9022f0/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
-    GEOS:
-      link: 'https://winworldpc.com/download/4073c2af-6d18-c39a-11c3-a4e284a2c3a5/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
-    GEM 1:
-      link: 'https://winworldpc.com/download/7d2f5acb-864d-0411-c3a6-e280947e5254/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
-    GEM 3:
-      link: 'https://winworldpc.com/download/c3bdc39e-3ec2-a64d-0411-c3a6e280947e/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
-    Atari DOS:
-      link: 'https://winworldpc.com/download/46e282ac-7f53-c2b2-3711-c3a5c28f1352/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
-    BeOS:
-      link: 'https://winworldpc.com/download/4112c2a0-7118-c39a-11c3-a4e284a2c3a5/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
-  Android:
-    link: 'https://www.fosshub.com/Android-x86.html?dwl=android-x86_64-9.0-r2.iso'
