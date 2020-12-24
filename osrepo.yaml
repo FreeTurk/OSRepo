@@ -82,7 +82,28 @@ os:
     m0n0wall:
       link: 'https://m0n0.ch/wall/installation_cdrom.php'
   linux:
+    Arch:
+      EndeavourOS:
+        link: 'https://mirror.alpix.eu/endeavouros/iso/endeavouros-2020.09.20-x86_64.iso'
+      Manjaro:
+        XFCE:
+          link: 'https://manjaro.org/downloads/official/xfce/'
+        GNOME:
+          link: 'https://manjaro.org/downloads/official/gnome/'
+        KDE:
+          link: 'https://manjaro.org/downloads/official/kde/'
+        Manjaro Architect:
+          link: 'https://manjaro.org/downloads/official/architect/'
+      BlackArch:
+        link: 'https://ftp.halifax.rwth-aachen.de/blackarch/iso/blackarch-linux-full-2020.12.01-x86_64.iso'
     Debian:
+      Raspi:
+        Raspi Ubuntu:
+          link: 'https://ubuntu.com/download/raspberry-pi'
+        Raspberry Pi OS:
+          link: 'https://downloads.raspberrypi.org/raspios_full_armhf/images/raspios_full_armhf-2020-12-04/2020-12-02-raspios-buster-armhf-full.zip'
+        Raspberry Pi Deskop:
+          link: 'https://downloads.raspberrypi.org/rpd_x86/images/rpd_x86-2020-12-11/2020-12-11-raspios-buster-i386.iso'
       Mint:
         XFCE:
           link: 'http://mirrors.seas.harvard.edu/linuxmint/stable/20/linuxmint-20-xfce-64bit.iso'
@@ -91,13 +112,24 @@ os:
       Parrot:
         link: 'https://download.parrot.sh/parrot/iso/4.10/Parrot-home-4.10_amd64.iso'
       Ubuntu:
-        link: 'https://releases.ubuntu.com/20.04.1/ubuntu-20.04.1-desktop-amd64.iso?_ga=2.239646211.1857678125.1608827650-830861523.1608827650'
+        Ubuntu Server:
+          link: 'https://releases.ubuntu.com/20.04.1/ubuntu-20.04.1-live-server-amd64.iso?_ga=2.240826115.1857678125.1608827650-830861523.1608827650'
+        Ubuntu Desktop:
+          link: 'https://releases.ubuntu.com/20.04.1/ubuntu-20.04.1-desktop-amd64.iso?_ga=2.239646211.1857678125.1608827650-830861523.1608827650'
+      Sabily:
+        link: 'https://sourceforge.net/projects/archiveos/files/s/sabily/sabily-10.10-desktop-amd64-ultimate.iso/download'
+      Biebian:
+        link: 'https://sourceforge.net/projects/biebian/files/JBL_1.0.iso/download'
+      Ubuntu Satanic:
+        link: 'https://sourceforge.net/projects/archiveos/files/u/ubuntu-satanic/satanic-undead-i386-666.9.iso/download'
       Kali:
         link: 'https://images.kali.org/virtual-images/kali-linux-2020.4-vmware-amd64.7z'
       PureOS:
         link: 'https://downloads.pureos.net/amber/live/gnome/2020-08-06/pureos-9.0-gnome-live_20200806-amd64.hybrid.iso'
       deepin:
         link: 'http://cdimage.deepin.com/releases/20/deepin-desktop-community-1002-amd64.iso'
+      Hannah Montana Linux:
+        link: 'http://www.tucows.com/thankyou.html?swid=611489'
     Source Mage:
       0.10.0:
         link: 'http://mirror.sobukus.de/files/sourcemage/iso/x86/0.10.0/smgl-0.10.0.iso.bz2'
