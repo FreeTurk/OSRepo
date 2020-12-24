@@ -134,6 +134,13 @@ os:
       5.0:
         link: 'https://osdn.net/frs/redir.php?m=dotsrc&f=%2Fstorage%2Fg%2Fl%2Fli%2Flinuxlite%2F5.0%2Flinux-lite-5.0-64bit.iso'
   Microsoft:
+    Windows:
+       Windows 7:
+         link: 'https://dw.uptodown.com/dwn/b1GUY-_-pWrAOR03dOKW_2MLABYdGxGs4H6cDa7flXc4F6nbwemHAZhgwR0dNHstDyJT-TrR1BET9p1T0gq405IAJk7vCd6K47bJxmZA4hLSVUymzqAYEKEnmDlTjyKe/tqnn5XFoIVsOkLS6E52tc9mXAIOCSsc2fxKorYSBGgz3WsZRYEqq2TPFm3M3dL8QbIQaXP7REjPnwCGwBsZr-mA9oAViww8pFLhFJZmg9rjX1e38ucdq87IpB_GT7f2i/An3Bt7Gpge7wKB9gdYOuDqRB6QGLDA0JAOa1ROGxJyWwCbAOGKSsJXGFSFNKtY48PuudT_mtNkRGzWg0hdFq1facBVEpi5OkpBJzQiAMyhmV9U0ZuYA9jRlO8BsLlijn/'
+       Windows 8.1:
+         link: 'https://software-download.microsoft.com/pr/Win8.1_English_x64.iso?t=4637a485-401f-427d-aaaf-6b600a2a2884&e=1608905822&h=f0f68a5f7b43e0d1e340ef089d64a5d7'
+       Windows 10:
+         link: 'https://go.microsoft.com/fwlink/?LinkId=691209'
     winnt:
       3.51:
         link: 'https://winworldpc.com/download/9c67f2a9-a8ec-11ea-8b3c-fa163e9022f0/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
