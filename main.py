@@ -1,4 +1,4 @@
-all_oss = []
+"""all_oss = []
 class OSobj:
     def __init__(self , name , repo_item, group) :
         self.repo_item = repo_item
@@ -38,7 +38,35 @@ for index in repo:
         for name in os_list:
             createosobject(name, index)
 for x in all_oss:
-    if x.group != None:
+    if x.repo_item != None:
         print(x.repo_item, ">", x.group, ">", x.name)
     else:
-        print(x.name)
+        print(x.name)"""
+
+import yaml
+from os import system
+import requests
+from time import sleep as delay
+import os
+if not os.path.isfile(".\osrepo.yaml"):
+    file = open("osrepo.yaml" , 'w+')
+r = requests.get("https://raw.githubusercontent.com/FreeTurk/OSRepo/stable/osrepo.yaml", allow_redirects=True)
+open('.\osrepo.yaml', 'wb').write(r.content)
+with open("osrepo.yaml", "r") as stream:
+    loaded_data = yaml.safe_load(stream)
+repo = loaded_data["os"]
+def link(link):
+    print(link)
+def walk(current_dir):
+    items= []
+    for item in current_dir:
+        items.append(item)
+        print(item)
+    bruh = input("\n>>")
+    if bruh in items:
+        system("cls")
+        walk(current_dir[bruh])
+    elif bruh.lower() == "main" or "back":
+        system("cls")
+        walk(repo)
+walk(repo)
