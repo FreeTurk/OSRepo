@@ -211,9 +211,6 @@ os:
       FreeDOS:
         FreeDOS:
           link: 'http://www.freedos.org/download/download/FD12CD.iso'
-  templeOS:
-    TempleOS:
-      link: 'https://templeos.org/Downloads/TempleOS.ISO'
   Haiku:
     link: 'https://cdn.haiku-os.org/haiku-release/r1beta2/haiku-r1beta2-x86_64-anyboot.zip'
   ReactOS:
@@ -225,6 +222,8 @@ os:
       link: 'http://www.menuetos.be/download.php?CurrentMenuetOS'
     DexOS:
       link: 'http://dex-os.github.io/DexOS.zip'
+    TempleOS:
+      link: 'https://templeos.org/Downloads/TempleOS.ISO'
     Visopsys:
       link: 'https://visopsys.org/files/visopsys/visopsys-0.9-iso.zip'
     Kolibri:
