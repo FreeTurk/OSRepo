@@ -1,0 +1,14 @@
+os:
+#construct your repo here
+  group:
+    some_cool_os:
+      goto: 'http://www.os.com'
+    another_cool_os:
+      goto: 'http://iloveoses.com'
+      
+meta:
+  links: 'goto'
+  #the key that has all the links in it (defaults to 'link' if not specified)
+  
+  author: 'baris-inandi'
+  #author of the repo (required)
