@@ -10,5 +10,6 @@ meta:
   links: 'goto'
   #the key that has all the links in it (defaults to 'link' if not specified)
   
-  author: 'baris-inandi'
+  authors:
+    -baris-inandi
   #author of the repo (required)
