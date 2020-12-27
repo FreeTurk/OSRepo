@@ -215,9 +215,22 @@ os:
           link: 'http://www.freedos.org/download/download/FD12CD.iso'
   Haiku:
     link: 'https://cdn.haiku-os.org/haiku-release/r1beta2/haiku-r1beta2-x86_64-anyboot.zip'
-  ReactOS:
-    link: 'https://sourceforge.net/projects/reactos/files/latest/download'
+  Android:
+    link: 'https://www.fosshub.com/Android-x86.html?dwl=android-x86_64-9.0-r2.iso'
+  IBM:
+    OS/2 1.0:
+      link: 'https://winworldpc.com/download/c39463e2-809e-4016-c389-11c3a7cb86ef/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
+    OS/2 2.0:
+      link: 'https://winworldpc.com/download/226b07a0-66ca-11e8-a48f-fa163e9022f0/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
+    OS/2 3.0:
+      link: 'https://winworldpc.com/download/403bc2b5-c3bf-18c3-9a11-c3a4e284a2ef/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
+    OS/2 Warp 4:
+      link: 'https://winworldpc.com/download/404e6cc2-af18-c39a-11c3-a4e284a2c3a5/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
+    OS400:
+      link: 'https://winworldpc.com/download/82cd938f-98ab-11ea-8c4a-fa163e9022f0/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
   other:
+    ReactOS:
+      link: 'https://sourceforge.net/projects/reactos/files/latest/download'
     Icaros:
       link: 'http://www.icarosdesktop.com/icarosfiles/IcarosLive_2_2_8.zip'
     MenuetOS:
@@ -246,17 +259,10 @@ os:
     Atari DOS:
       link: 'https://winworldpc.com/download/46e282ac-7f53-c2b2-3711-c3a5c28f1352/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
     BeOS:
-      link: 'https://winworldpc.com/download/4112c2a0-7118-c39a-11c3-a4e284a2c3a5/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
-  Android:
-    link: 'https://www.fosshub.com/Android-x86.html?dwl=android-x86_64-9.0-r2.iso'
-  IBM:
-    OS/2 1.0:
-      link: 'https://winworldpc.com/download/c39463e2-809e-4016-c389-11c3a7cb86ef/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
-    OS/2 2.0:
-      link: 'https://winworldpc.com/download/226b07a0-66ca-11e8-a48f-fa163e9022f0/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
-    OS/2 3.0:
-      link: 'https://winworldpc.com/download/403bc2b5-c3bf-18c3-9a11-c3a4e284a2ef/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
-    OS/2 Warp 4:
-      link: 'https://winworldpc.com/download/404e6cc2-af18-c39a-11c3-a4e284a2c3a5/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
-    OS400:
-      link: 'https://winworldpc.com/download/82cd938f-98ab-11ea-8c4a-fa163e9022f0/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
+      link: 'https://winworldpc.com/download/4112c2a0-7118-c39a-11c3-a4e284a2c3a5/from/c3ae6ee2-8099-713d-3411-c3a6e280947e' 
+meta:
+  authors:
+    - baris-inandi
+    - FreeTurk
+  
+
