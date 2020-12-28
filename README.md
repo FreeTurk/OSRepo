@@ -5,7 +5,7 @@ this is the backend for the next great thing for OSR: The first stable release. 
 
 * gotten rid of wip areas (and hopefully added them to the repo)
 
-* added new OSes (there are almost a hundred OSes now in the repo in total)
+* added new OSes (currently 100+ OSes)
 
 * completely re-coded the backend in python using computer magic (there are many more options and more usability in this version, i promise)
 
