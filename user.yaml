@@ -1,5 +1,5 @@
 os:
-#construct your repo here
+#construct your repo using YAML format here!
   group:
     some_cool_os:
       goto: 'http://www.os.com'
