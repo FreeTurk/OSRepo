@@ -7,6 +7,7 @@ import webbrowser
 import re
 import string
 from difflib import SequenceMatcher as matcher
+import re
 
 def initialize():
     if not os.path.isfile(".\osrepo.yaml") :
@@ -69,57 +70,64 @@ class OSobj:
         self.name = name
         self.path = path
 
-def removedeplicate(list):
+def removeduplicate(list):
     new=[]
     for i in list:
         if i not in new:
             new.append(i)
-    return list(new)
+    return new
 
-def search(os_list, keywords_input, success_treshold = 0.6, retry=False):
+def search(os_list, keywords_input, success_treshold = 0.67, try_count=0):
     #initial definitions
     filtered_input = []
     passed_filter = []
-    final_output = []
 
     #filter the input
-    if not retry:
-        keywords = keywords_input[len("search ".lower()):].split(",")
-        for keyword in keywords:
-            proper_keyword = keyword.strip("\'").strip("\"").strip(" ")
-            filtered_input.append(proper_keyword)
-        print(filtered_input, "\n\n")
-    else: #if retrying and input already filtered
-        filtered_input = keywords_input
-        print(filtered_input)
+    keywords = keywords_input[len("search ".lower()):].split(",")
+    for keyword in keywords:
+        proper_keyword = keyword.strip("\'").strip("\"").strip(" ")
+        filtered_input.append(proper_keyword)
+    #print(filtered_input, "\n\n")
 
     #filter the OSes
     for path in os_list:
-        print("os path in operation: \t", path)
-        filtered = re.sub('[' + string.punctuation + ']' , ' > ' , path).split()
+        #print("os path in operation: \t", path)
+        filtered = list(filter(None, re.split(' > ' , path)))
+        filtered_word_sensitive = re.sub('[' + string.punctuation + ']' , '> ' , path).split()
         while ">" in filtered:
             filtered == filtered.remove(">")
-        print("keywords:\t\t ", filtered)
-        print("inputed keywords:\t ", filtered_input)
+        while ">" in filtered_word_sensitive:
+            filtered_word_sensitive == filtered_word_sensitive.remove(">")
+        #print("keywords:\t\t ", filtered)
+        #print("word sensitive:\t\t ", filtered_word_sensitive)
+        #print("inputed keywords:\t ", filtered_input)
 
         #compare the values
-        print("----------------------------------------------")
-        print("success_treshold = " , success_treshold)
-        for item in filtered:
+        all_filtered = removeduplicate(filtered_word_sensitive + filtered)
+        #print("----------------------------------------------")
+        #print("success_treshold = " , success_treshold)
+        for item in all_filtered:
             for keyword in filtered_input:
                 matchval = round(matcher(None , keyword.lower() , item.lower()).ratio(), 3)
-                if matchval!=0:
-                    print(keyword , "to" , item , matchval, "\t--->", round(matchval*100, 3),"%")
-                else:
-                    print(keyword, "to", item, "\tNO MATCH")
+                #if matchval!=0:
+                    #print(keyword , "to" , item, "\t--->", round(matchval*100, 3),"%")
+                #else:
+                    #print(keyword, "to", item, "\tNO MATCH")
                 if matchval >= success_treshold:
                     passed_filter.append(path)
-        print("\n\n")
+        #print("\n\n")
 
-    return list(passed_filter)
+    return list(removeduplicate(passed_filter))
 
 if __name__ == "__main__":
+    bruhh = input(">> ")
+    import time
+    start_time = time.time()
     repo = initialize()
     all_oses_list = index(repo)
-    for i in search(all_oses_list, input("> ")):
+    print()
+    result = search(all_oses_list , bruhh)
+    print(len(result), "search result(s):")
+    for i in result:
         print(i)
+    print("\nprocess completed in:\n--- %s seconds ---" % round((time.time() - start_time),2))
