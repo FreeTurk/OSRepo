@@ -8,7 +8,7 @@ import re
 import string
 from difflib import SequenceMatcher as matcher
 import re
-
+import platform
 def initialize():
     if not os.path.isfile(".\osrepo.yaml") :
         open("osrepo.yaml" , 'w+')
@@ -19,22 +19,22 @@ def initialize():
     repo = loaded_data["os"]
     return repo
 def download(link):
-    system("cls")
+    clear()
     confirm = input("Do you want to download this OS? (y/n): ")
     if confirm.upper() == "Y":
         webbrowser.open(link)
     elif confirm.upper() == "N":
-        system("cls")
+        clear()
         print("download cancelled.")
         delay(.75)
         #                                               TODO: go to main menu here
     else:
-        system("cls")
+        clear()
         print("invalid")
         delay(.5)
-        system("cls")
+        clear()
         download(link)
-    system("cls")
+    clear()
 
 def index(dct, key='link'):
     if key in dct:
@@ -54,16 +54,16 @@ def walk(current_dir):
             print(item)
     bruh = input("\n>>")
     if bruh in items:
-        system("cls")
+        clear()
         walk(current_dir[bruh])
     elif bruh.lower() == "main" or bruh.lower() == "back":
-        system("cls")
+        clear()
         walk(repo)
     else:
-        system("cls")
+        clear()
         print("invaild.")
         delay(.5)
-        system("cls")
+        clear()
         walk(current_dir)
 class OSobj:
     def __init__(self , name, path) :
@@ -77,7 +77,7 @@ def removeduplicate(list):
             new.append(i)
     return new
 
-def search(os_list, keywords_input, success_treshold = 0.67, try_count=0):
+def search(os_list, keywords_input, success_treshold = 0.67):
     #initial definitions
     filtered_input = []
     passed_filter = []
@@ -119,15 +119,25 @@ def search(os_list, keywords_input, success_treshold = 0.67, try_count=0):
 
     return list(removeduplicate(passed_filter))
 
+def clear():
+    if platform.system() == "Linux" :
+        system("clear")
+    if platform.system() == "Windows" :
+        system("cls")
+
 if __name__ == "__main__":
-    bruhh = input(">> ")
-    import time
-    start_time = time.time()
+
     repo = initialize()
     all_oses_list = index(repo)
-    print()
-    result = search(all_oses_list , bruhh)
-    print(len(result), "search result(s):")
-    for i in result:
-        print(i)
-    print("\nprocess completed in:\n--- %s seconds ---" % round((time.time() - start_time),2))
+    user = input("> ")
+    user == user.lower()
+    if user.startswith("search "):
+        result = search(all_oses_list, user)
+        for i in result:
+            print(i)
+    elif user == "list":
+        for os in all_oses_list:
+            print(os)
+    elif user == "explore":
+        clear()
+        walk(repo)
