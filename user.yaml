@@ -1,21 +1,40 @@
 os:
-#construct your repo using YAML format here!
+# construct your repo using YAML format here!
   group:
     some_cool_os:
-      goto: 'http://www.os.com'
+      goto: 'http://www.os.com/download.iso'
     another_cool_os:
-      goto: 'http://iloveoses.com'
+      goto: 'http://iloveoses.com/download.iso'
+  another_group: 
+      coolest_os_ever:
+        goto: 'http://cooloses.com/download.iso'
       
 meta:
   links: 'goto'
-  #the key that has all the links in it (defaults to 'link' if not specified)
+  # the key that has all the links in it (defaults to 'link' if not specified)
   
   authors:
-    -baris-inandi
-  #author of the repo (required)
+    - baris-inandi
+  # author of the repo (required)
   
   about: |
     This repo is a cool template for OSR user files!
-  #put in some information about this repo! (required)
+  # put in some information about this repo! (required)
 
-#save this file as a .osrepo file and open it using OSR!
+  tags:
+  # these are tags! tags are a way to classify OSes. you can use the command:
+  # tag <tag_name> to search using these tags.
+    warn: 
+    # these are just like normal tags but they will be displayed as a warning before downloading an os that has this tag.
+      deprecated: # add items to tag using lists
+        - coolest_os_ever
+      beta:
+        - another_group # you can add tags to whole groups, this will affect all items inside that group.
+    tags:
+    # these tags are tags that wont be shown before downloading.
+      cool_oses:
+        - some_cool_os
+        - another_cool_os
+
+
+# save this file as a .osrepo file and open it using OSR!
