@@ -146,7 +146,7 @@ os:
       0.9.5:
         link: 'http://mirror.sobukus.de/files/sourcemage/iso/x86/0.9.5/smgl-0.9.5-i486.iso.bz2'
     Red Hat:  
-      CentOS (Deprecated):
+      CentOS:
         x86_64 8:
           link: 'http://ftp.linux.org.tr/centos/8.2.2004/isos/x86_64/'
         aarch64 8:
