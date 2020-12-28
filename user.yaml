@@ -13,3 +13,7 @@ meta:
   authors:
     -baris-inandi
   #author of the repo (required)
+  
+  about: |
+    This repo is a cool template for OSR user files!
+  #put in some information about this repo! (required)
