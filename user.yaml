@@ -17,3 +17,5 @@ meta:
   about: |
     This repo is a cool template for OSR user files!
   #put in some information about this repo! (required)
+
+#save this file as a .osrepo file and open it using OSR!
