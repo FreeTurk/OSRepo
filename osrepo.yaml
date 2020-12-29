@@ -305,11 +305,7 @@ meta:
     - baris-inandi
     - FreeTurk
   about: |
-    A community driven project on bringing many OSes into one package. Now with less calories! Wear your seatbelts, this is going to be one of the most common repos! Made with <3 by @baris-inandi and @FreeTurk
-  tags:
-    warn:
-      deprecated:
-        - CentOS
-      beta:
-        - 11 PB1
-
+    A community driven project on bringing many OSes into one package. Now with less calories! Wear your seatbelts, this is going to be one of the most common repos! Made with <3 by @baris-inandi and @FreeTurk 
+  warn:
+    - deprecated
+    - beta
