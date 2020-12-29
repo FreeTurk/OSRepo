@@ -239,8 +239,11 @@ os:
           link: 'http://www.freedos.org/download/download/FD12CD.iso'
   Haiku:
     link: 'https://cdn.haiku-os.org/haiku-release/r1beta2/haiku-r1beta2-x86_64-anyboot.zip'
-  Android:
-    link: 'https://www.fosshub.com/Android-x86.html?dwl=android-x86_64-9.0-r2.iso'
+  Google:
+    ChromeOS:
+      link: 'https://isoriver.com/download-your-file-now/?url=https://depositfiles.com/files/9noibr9ds'
+    Android:
+      link: 'https://www.fosshub.com/Android-x86.html?dwl=android-x86_64-9.0-r2.iso'
   IBM:
     OS/2 1.0:
       link: 'https://winworldpc.com/download/c39463e2-809e-4016-c389-11c3a7cb86ef/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
@@ -283,13 +286,26 @@ os:
     Atari DOS:
       link: 'https://winworldpc.com/download/46e282ac-7f53-c2b2-3711-c3a5c28f1352/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
     BeOS:
-      link: 'https://winworldpc.com/download/4112c2a0-7118-c39a-11c3-a4e284a2c3a5/from/c3ae6ee2-8099-713d-3411-c3a6e280947e' 
+      link: 'https://winworldpc.com/download/4112c2a0-7118-c39a-11c3-a4e284a2c3a5/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
+    Minix 3:
+      3.3.0:
+        link: 'http://download.minix3.org/iso/minix_R3.3.0-588a35b.iso.bz2'
+      3.2.1:
+        link: 'http://download.minix3.org/iso/minix_R3.2.1-972156d.iso.bz2'
+      Bell Labs:
+        Plan 9:
+          CD image:
+            link: 'https://9p.io/plan9/download/plan9.iso.bz2'
+          USB image:
+            link: 'https://9p.io/plan9/download/usbdisk.bz2'
+          Floppy image:
+            link: 'https://9p.io/plan9/download/plan9.flp.gz'
 meta:
   authors:
     - baris-inandi
     - FreeTurk
   about: |
-    A community drivern project on bringing OSs into one package. Now with less calories! Wear your seatbelts, this is going to be one of the most common repos! Made with <3 by @baris-inandi and @FreeTurk
+    A community driven project on bringing many OSes into one package. Now with less calories! Wear your seatbelts, this is going to be one of the most common repos! Made with <3 by @baris-inandi and @FreeTurk
   tags:
     warn:
       deprecated:
