@@ -9,15 +9,24 @@ import string
 from difflib import SequenceMatcher as matcher
 import re
 import platform
+
+def tag(meta, path):
+    warn = meta["warn"]
+
+
+    return tags
+
 def initialize():
     if not os.path.isfile(".\osrepo.yaml") :
         open("osrepo.yaml" , 'w+')
-    r = requests.get("https://raw.githubusercontent.com/FreeTurk/OSRepo/stable/osrepo.yaml" ,allow_redirects=True)
+    r = requests.get("https://raw.githubusercontent.com/FreeTurk/OSRepo/stable/osrepo.yaml",allow_redirects=True)
     open('.\osrepo.yaml' , 'wb').write(r.content)
     with open("osrepo.yaml" , "r") as stream :
         loaded_data = yaml.safe_load(stream)
     repo = loaded_data["os"]
-    return repo
+    meta = loaded_data["meta"]
+    return repo, meta
+
 def download(link):
     clear()
     confirm = input("Do you want to download this OS? (y/n): ")
@@ -27,7 +36,7 @@ def download(link):
         clear()
         print("download cancelled.")
         delay(.75)
-        #                                               TODO: go to main menu here
+        walk(repo)
     else:
         clear()
         print("invalid")
@@ -65,10 +74,6 @@ def walk(current_dir):
         delay(.5)
         clear()
         walk(current_dir)
-class OSobj:
-    def __init__(self , name, path) :
-        self.name = name
-        self.path = path
 
 def removeduplicate(list):
     new=[]
@@ -126,8 +131,8 @@ def clear():
         system("cls")
 
 if __name__ == "__main__":
-
-    repo = initialize()
+    clear()
+    repo, meta = initialize()
     all_oses_list = index(repo)
     user = input("> ")
     user == user.lower()
@@ -141,3 +146,7 @@ if __name__ == "__main__":
     elif user == "explore":
         clear()
         walk(repo)
+    elif user == "tag":
+        clear()
+        for path in all_oses_list:
+            tag(meta, all_oses_list)
