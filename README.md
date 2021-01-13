@@ -6,9 +6,9 @@ this is the backend for the next great thing for OSR: The first stable release. 
 * gotten rid of (some) wip areas (and hopefully added them to the repo)
 
 * added new OSes (currently 100+ OSes)
- * weird ones if you are mentally unstable
- * more linux distros
- * red hat
+  * some really weird ones if you are very much mentally unstable
+  * more linux distros
+  * red hat
 
 * for Windows users: a new installer! Now you can install OSR using a proper installer without having to open, move, copy files or whatever! its just easy.
 
