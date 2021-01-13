@@ -3,18 +3,32 @@ from os import system
 from time import sleep as delay
 from difflib import SequenceMatcher as matcher
 
-temp =                  lambda path : shutil.copy2(path , os.path.join(tempfile.gettempdir() , "osrepo.tmp.yaml"))
-download_request  =     lambda filename : open('.\{}'.format(filename) , 'wb').write(requests.get("https://raw.githubusercontent.com/FreeTurk/OSRepo/stable/{}".format(filename) , allow_redirects=True).content)
+generate_temp_yaml =    lambda path : shutil.copy2(path , os.path.join(tempfile.gettempdir() , "osrepo.tmp.yaml"))
+download_request  =     lambda filename : open('.\{}'.format(filename) , 'wb').write(requests.get("".format(filename) , allow_redirects=True).content)
 
-def initialize() :
+def getvariables():
     if not os.path.isfile(".\osrepo.yaml") :
         open("osrepo.yaml" , 'w+')
+    r = requests.get("https://raw.githubusercontent.com/FreeTurk/OSRepo/stable/variables.yaml" ,allow_redirects=True)
+    open('.\\variables.yaml' , 'wb').write(r.content)
+    with open(".\\variables.yaml" , "r") as stream :
+        loaded_data = yaml.safe_load(stream)
+    return loaded_data
+
+def initialize() :
+    var = getvariables
+    if not os.path.isfile(".\osrepo.yaml") :
+        open("osrepo.yaml" , 'w+')
+    if not os.path.isfile(".\\variables.yaml") :
+        open("variables.yaml" , 'w+')
+    with open("variables.yaml" , "r") as stream :
+        var = yaml.safe_load(stream)
     download_request("osrepo.yaml")
     with open("osrepo.yaml" , "r") as stream :
         loaded_data = yaml.safe_load(stream)
     repo = loaded_data["os"]
     meta = loaded_data["meta"]
-    return repo , meta
+    return var, repo , meta
 
 def download(link) :
     clear()
@@ -33,10 +47,10 @@ def download(link) :
         download(link)
     clear()
 
-def index(dct , key='link') :
-    if key in dct :
+def index(dictionary , key='link') :
+    if key in dictionary :
         yield ""
-    for k , v in dct.items() :
+    for k , v in dictionary.items() :
         if isinstance(v , dict) :
             for s in index(v , key) :
                 yield f" > {k}{s}"
@@ -167,8 +181,10 @@ def get_command(user) :
         if remove_prefix(user, search).replace(" ", ""):
             success, search_result, info = search(all_oses_list, user)
     elif user == "list" :
+        i = 0
         for os in all_oses_list :
-            print(os)
+            i += 1
+            print("({}){}".format(i,os))
     elif user == "download" :
         clear()
         walk(repo)
@@ -177,7 +193,7 @@ def get_command(user) :
         help()
     elif user == "open" :
         clear()
-        system("start " + temp("osrepo.yaml"))
+        system("start " + generate_temp_yaml("osrepo.yaml"))
         main()
 
 def main() :
@@ -187,6 +203,6 @@ def main() :
 
 if __name__ == "__main__" :
     clear()
-    repo , meta = initialize()
+    var, repo , meta = initialize()
     all_oses_list = index(repo)
     main()
