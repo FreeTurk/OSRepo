@@ -8,7 +8,10 @@ this is the backend for the next great thing for OSR: The first stable release. 
 * added new OSes (currently 100+ OSes)
 
 * completely re-coded the backend in python using computer magic (there are many more options and more usability in this version, i promise)
+  * computer magic also helps features like OS search, user files, and a generally better experience!
 
 * also now the user can get live updates of the repo. No need to update OSR to get new updates. The program gets the latest version of the repo everytime it is launched.
 
-* added support for user files: .osrepo files written in YAML format can be imported. 
+* added support for user files: .osrepo files written in YAML format can be imported. (maybe  available on future versions?)
+
+* ...and yes, auto-update.
