@@ -292,14 +292,14 @@ os:
         link: 'http://download.minix3.org/iso/minix_R3.3.0-588a35b.iso.bz2'
       3.2.1:
         link: 'http://download.minix3.org/iso/minix_R3.2.1-972156d.iso.bz2'
-      Bell Labs:
-        Plan 9:
-          CD image:
-            link: 'https://9p.io/plan9/download/plan9.iso.bz2'
-          USB image:
-            link: 'https://9p.io/plan9/download/usbdisk.bz2'
-          Floppy image:
-            link: 'https://9p.io/plan9/download/plan9.flp.gz'
+    Bell Labs:
+      Plan 9:
+        CD image:
+          link: 'https://9p.io/plan9/download/plan9.iso.bz2'
+        USB image:
+          link: 'https://9p.io/plan9/download/usbdisk.bz2'
+        Floppy image:
+          link: 'https://9p.io/plan9/download/plan9.flp.gz'
 meta:
   authors:
     - baris-inandi
