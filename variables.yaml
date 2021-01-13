@@ -1,3 +1,3 @@
-yaml_link: "https://raw.githubusercontent.com/FreeTurk/OSRepo/stable/{}"
-yaml_filename: "osrepo.yaml"
-update_link: "https://github.com/FreeTurk/OSRepo/raw/stable/installOSR.exe"
+yaml_link: "https://raw.githubusercontent.com/FreeTurk/OSRepo/stable/osrepo.yaml"
+yaml_filename: "./osrepo.yaml"
+installer: "https://github.com/FreeTurk/OSRepo/raw/stable/installOSR.exe"
