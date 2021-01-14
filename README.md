@@ -24,4 +24,4 @@ this is the backend for the next great thing for OSR: The first stable release. 
 
 * ...and yes, auto-update.
 
-* backend almost complete! Maybe a GUI coming??
+* backend almost complete! Maybe a GUI coming?? PyQT????
