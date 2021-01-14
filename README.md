@@ -23,3 +23,5 @@ this is the backend for the next great thing for OSR: The first stable release. 
  * now you can find the user.yaml file to see a brief example file to see how to write an .osrepo file (in yaml syntax)!
 
 * ...and yes, auto-update.
+
+* backend almost complete! Maybe a GUI coming??
