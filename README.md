@@ -1,4 +1,5 @@
-# OSRepo - the stable version
+# OSRepo - the stable version 
+# NOW FEATURING A GUI
 
 
 this is the backend for the next great thing for OSR: The first stable release. In this branch we have made new changes:
