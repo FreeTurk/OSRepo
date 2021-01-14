@@ -3,32 +3,25 @@ from os import system
 from time import sleep as delay
 from difflib import SequenceMatcher as matcher
 
-generate_temp_yaml =    lambda path : shutil.copy2(path , os.path.join(tempfile.gettempdir() , "osrepo.tmp.yaml"))
-download_request  =     lambda filename : open('.\{}'.format(filename) , 'wb').write(requests.get("".format(filename) , allow_redirects=True).content)
-
-def getvariables():
-    if not os.path.isfile(".\osrepo.yaml") :
-        open("osrepo.yaml" , 'w+')
-    r = requests.get("https://raw.githubusercontent.com/FreeTurk/OSRepo/stable/variables.yaml" ,allow_redirects=True)
-    open('.\\variables.yaml' , 'wb').write(r.content)
-    with open(".\\variables.yaml" , "r") as stream :
-        loaded_data = yaml.safe_load(stream)
-    return loaded_data
+generate_temp_yaml = lambda path : shutil.copy2(path , os.path.join(tempfile.gettempdir() , "osrepo.tmp.yaml"))
+request_download = lambda filename,path : open(filename , 'wb').write(requests.get(path ,allow_redirects=True).content)
 
 def initialize() :
-    var = getvariables
-    if not os.path.isfile(".\osrepo.yaml") :
-        open("osrepo.yaml" , 'w+')
-    if not os.path.isfile(".\\variables.yaml") :
-        open("variables.yaml" , 'w+')
-    with open("variables.yaml" , "r") as stream :
-        var = yaml.safe_load(stream)
-    download_request("osrepo.yaml")
-    with open("osrepo.yaml" , "r") as stream :
+    # generate VARIABLES (if non-existent) and request file
+    request_download("VARIABLES", "https://raw.githubusercontent.com/FreeTurk/OSRepo/stable/VARIABLES")
+    # parse VARIABLES
+    with open("VARIABLES" , "r") as f :
+        var = yaml.safe_load(f)
+
+    # generate osrepo.yaml (if non-existent) and request file
+    request_download(var["yaml_filename"], var["yaml_link"])
+    # parse osrepo.yaml
+    with open(var["yaml_filename"] , "r") as stream :
         loaded_data = yaml.safe_load(stream)
+
     repo = loaded_data["os"]
     meta = loaded_data["meta"]
-    return var, repo , meta
+    return var , repo , meta
 
 def download(link) :
     clear()
@@ -124,10 +117,8 @@ def search(os_list , keywords_input , success_treshold=0.67) :
 
     # finalize
     out = list(removeduplicate(passed_filter))
-    if len(out) != 0 :
-        info , success = str("{} results found in {} seconds".format(str(len(out)) , str(round(float(time.time() - start_time) , 3)))) , True
-    else :
-        info , success = "No search results found" , False
+    if len(out) != 0 :info , success = str("{} results found in {} seconds".format(str(len(out)) , str(round(float(time.time() - start_time) , 3)))) , True
+    else :info , success = "No search results found" , False
     return success , out , info
 
 def clear() :
