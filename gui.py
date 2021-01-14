@@ -1,7 +1,8 @@
 from tkinter import *
-from PyQt5.QtCore import Qt
-from PyQt5.QtGui import QPalette , QColor
+from PyQt5.QtCore import *
+from PyQt5.QtGui import *
 from PyQt5.QtWidgets import *
+import sys
 
 app = QApplication([])
 
@@ -11,24 +12,30 @@ class ui :
     font, fontsize = "Trebuchet MS", 14
     class style:
         # colors
-        background = 20 , 20 , 24
-        text = 190 , 190 , 190
-        button = 61 , 64 , 82
-        border = 10 , 10 , 10
+        background =    28, 28, 32
+        text =          190 , 190 , 190
+        button =        61 , 64 , 82
+        border =        10 , 10 , 10
         # stylesheets
         button_modern="""
             QPushButton{
-               background:rgba(0,0,0,.33);
-               border-radius: 0;
-               border: none;
-            }
+                 background:rgba(0,0,0,.33);
+                 border-radius: 0;
+                 border-style: none;}
             QPushButton:hover{
-              background:rgba(200,200,255,.1);
-            }
+                background:rgba(200,200,255,.2);}
             QPushButton:hover:!pressed{
-               
-                background:rgba(0,0,0,.1);
-            }
+                background:rgba(0,0,0,.1);}
+        """
+        button_close="""
+            QPushButton{
+                background:rgba(255,0,0,.5);
+                border-radius: 1px;
+                border-style: none;}
+            QPushButton:hover{
+                background:rgba(255,0,0,.3);}
+            QPushButton:hover:!pressed{
+                background:rgba(255,0,0,.4);}
         """
 
 def winpos(dispx , dispy , winx=ui.winx , winy=ui.winy) :
@@ -44,9 +51,19 @@ def flex_button(item , content="Button" , geometry=((0 , 0) , (20 , 20)) , oncli
     posxpercent , posypercent = int((posx * ui.winx) / 100) + marginx , int((posy * ui.winy) / 100) + marginy
     sizexpercent , sizeypercent = int((sizex * ui.winx) / 100) - (marginx * 2) , int((sizey * ui.winy) / 100) - (marginy * 2)
     buttonobject = QPushButton(content , item)
+    buttonobject.setGeometry(posxpercent , posypercent , sizexpercent , sizeypercent)
     if css!=None: buttonobject.setStyleSheet(css)
     if tooltip != None : buttonobject.setToolTip(tooltip)
-    buttonobject.setGeometry(posxpercent , posypercent , sizexpercent , sizeypercent)
+    if onclick != None : buttonobject.clicked.connect(onclick)
+
+def button(item , content="Button" , geometry=((0,0),(20,20)) , onclick=None , tooltip=None , css=None) :
+    pos , size = geometry
+    sizex , sizey = size
+    posx , posy = pos
+    buttonobject = QPushButton(content , item)
+    buttonobject.setGeometry(posx , posy , sizex , sizey)
+    if css!=None: buttonobject.setStyleSheet(css)
+    if tooltip != None : buttonobject.setToolTip(tooltip)
     if onclick != None : buttonobject.clicked.connect(onclick)
 
 # Dark Mode
@@ -71,13 +88,18 @@ app.setPalette(palette)
 app.setApplicationName("OSRepo")
 root = Tk()
 
+#
+BUTTON_HEIGHT = 30
+# button width
+BUTTON_WIDTH = 30
+# title bar height
+TITLE_HEIGHT = 30
 
 class Window(QMainWindow) :
 
     def __init__(self):
         super(Window, self).__init__()
         self.layout  = QVBoxLayout()
-        # self.layout.addWidget(MyBar(self))
         #add titlebar
         self.setLayout(self.layout)
         self.layout.setContentsMargins(0,0,0,0)
@@ -92,6 +114,9 @@ class Window(QMainWindow) :
         font-family: {};
         font-size: {}px;
         """.format(ui.font, str(ui.fontsize)))
+
+        #quit button
+        button(self, " X ", ( (ui.winx-(24) , 4) , (20 , 20)), quit, css=style.button_close)
 
         # add search bar here
 
@@ -111,6 +136,8 @@ class Window(QMainWindow) :
     def search(self , param) :
         print("search function called: " , param)
 
+    def quit(self):
+        sys.exit()
 
 App = QApplication(sys.argv)
 window = Window()
