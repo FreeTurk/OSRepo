@@ -1,7 +1,7 @@
 # OSRepo - the stable version
 
 
-this is the backend for the next great thing for OSR: The first stable release. In this branch we have made new changes:
+this is the for the next great thing for OSR: The first stable release. In this branch we have made new changes:
 
 * gotten rid of (some) wip areas (and hopefully added them to the repo)
 
@@ -26,4 +26,4 @@ this is the backend for the next great thing for OSR: The first stable release. 
 
 * backend almost complete! Maybe a GUI coming?? PyQT????
 
-* *Thanks baris-inandi for the support, you a real bro.
+* *Thanks baris-inandi for the support, you a real bro.*
