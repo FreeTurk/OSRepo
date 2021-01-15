@@ -25,6 +25,6 @@ this is the for the next great thing for OSR: The first stable release. In this 
 * ...and yes, auto-update.
 
 * backend almost complete! Maybe a GUI coming?? PyQT????
- * well... yes a gui is on its way, you know i dont know *anything* about front-end :/
+  * well... yes a gui is on its way, you know i dont know *anything* about front-end :/
 
 * *Thanks baris-inandi for the support, you a real bro.*
