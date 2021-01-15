@@ -3,7 +3,7 @@ from os import system
 from time import sleep as delay
 from difflib import SequenceMatcher as matcher
 
-generate_temp_yaml = lambda path : shutil.copy2(path , os.path.join(tempfile.gettempdir() , "osrepo.tmp.yaml"))
+generate_temp_yaml = lambda path : shutil.copy2(path, fd, temp_path = tempfile.mkstemp())
 request_download = lambda filename,path : open(filename , 'wb').write(requests.get(path ,allow_redirects=True).content)
 
 def initialize() :
@@ -162,15 +162,18 @@ uninstall (windows only)
   //uninstall OSR
     """)
 
-def remove_prefix(text, prefix):
-    if text.startswith(prefix):
-        return text[len(prefix):]
+def remove_prefix(text, prefixstr):
+    if text.startswith(prefixstr):
+        return text[len(prefixstr):]
     return text
 
 def get_command(user) :
     if user.startswith("search ") :
-        if remove_prefix(user, search).replace(" ", ""):
+        if remove_prefix(user, "search").replace(" ", ""):
             success, search_result, info = search(all_oses_list, user)
+            print(info)
+            for result in search_result:
+                print(result)
     elif user == "list" :
         i = 0
         for os in all_oses_list :

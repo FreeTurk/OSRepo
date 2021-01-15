@@ -2,7 +2,7 @@
 **NOW FEATURING A GUI! (look at gui branch)**
 
 
-this is the backend for the next great thing for OSR: The first stable release. In this branch we have made new changes:
+this is the for the next great thing for OSR: The first stable release. In this branch we have made new changes:
 
 * gotten rid of (some) wip areas (and hopefully added them to the repo)
 
@@ -26,5 +26,6 @@ this is the backend for the next great thing for OSR: The first stable release. 
 * ...and yes, auto-update.
 
 * backend almost complete! Maybe a GUI coming?? PyQT????
+  * well... yes a gui is on its way, you know i dont know *anything* about front-end :/
 
 * *Thanks baris-inandi for the support, you a real bro.*

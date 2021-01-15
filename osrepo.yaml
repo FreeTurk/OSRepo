@@ -1,3 +1,4 @@
+# the great repo of all kinds of OSes, the legendary, the epic, the amazing osrepo.yaml!
 os:
   Apple:
     MacOS:
@@ -209,18 +210,31 @@ os:
       5.0:
         link: 'https://osdn.net/frs/redir.php?m=dotsrc&f=%2Fstorage%2Fg%2Fl%2Fli%2Flinuxlite%2F5.0%2Flinux-lite-5.0-64bit.iso'
   Microsoft:
+    windos:
+      Windows 1.0:
+        link: 'https://archive.org/download/austin_1.01/1.01.zip'
+      Windows 2.03:
+        link: 'https://winworldpc.com/download/c3bec3ad-e280-a03a-e280-b05f11c3a4ef/from/c39ac2af-c381-c2bf-1b25-11c3a4e284a2'
+      Windows 3.0:
+        link: 'https://archive.org/download/windows3.0isofile/Windows%203.0.iso'
+      Windows 95:
+        link: 'https://winworldpc.com/download/48373a22-25c3-8911-c3a6-e280947e5254/from/c39ac2af-c381-c2bf-1b25-11c3a4e284a2'
+      Windows 98:
+        link: 'https://winworldpc.com/download/c3b4c382-3210-e280-9d7b-11c3a4c2ac5a/from/c39ac2af-c381-c2bf-1b25-11c3a4e284a2'
     winnt:
-      3.51:
+      Windows NT 3.51:
         link: 'https://winworldpc.com/download/9c67f2a9-a8ec-11ea-8b3c-fa163e9022f0/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
-      4:
+      Windows NT 4.0:
+        link: 'https://winworldpc.com/download/4162c2ba-c3b7-18c3-9a11-c3a4e284a2ef/from/c39ac2af-c381-c2bf-1b25-11c3a4e284a2'
+      Windows NT 4.0:
         link: 'https://winworldpc.com/download/416031c2-ab18-c39a-11c3-a4e284a2c3a5/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
-      2000:
+      Windows 2000:
         link: 'https://winworldpc.com/download/413638c2-8d18-c39a-11c3-a4e284a2c3a5/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
-      Longhorn:
+      Windows Vista:
         link: 'https://winworldpc.com/download/427424c3-9a18-c39a-11c3-a4e284a2c3a5/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
       Neptune:
         link: 'https://winworldpc.com/download/46c39b6a-7cc2-bbc3-9311-c3a4c2ac5a54/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
-      Whistler:
+      Windows XP:
         link: 'https://winworldpc.com/download/422f790a-18c3-9a11-c3a4-e284a2c3a570/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
       Windows 7:
         link: 'https://dw.uptodown.com/dwn/b1GUY-_-pWrAOR03dOKW_2MLABYdGxGs4H6cDa7flXc4F6nbwemHAZhgwR0dNHstDyJT-TrR1BET9p1T0gq405IAJk7vCd6K47bJxmZA4hLSVUymzqAYEKEnmDlTjyKe/tqnn5XFoIVsOkLS6E52tc9mXAIOCSsc2fxKorYSBGgz3WsZRYEqq2TPFm3M3dL8QbIQaXP7REjPnwCGwBsZr-mA9oAViww8pFLhFJZmg9rjX1e38ucdq87IpB_GT7f2i/An3Bt7Gpge7wKB9gdYOuDqRB6QGLDA0JAOa1ROGxJyWwCbAOGKSsJXGFSFNKtY48PuudT_mtNkRGzWg0hdFq1facBVEpi5OkpBJzQiAMyhmV9U0ZuYA9jRlO8BsLlijn/'
@@ -306,3 +320,4 @@ meta:
     - FreeTurk
   about: |
     A community driven project on bringing many OSes into one package. Now with less calories! Wear your seatbelts, this is going to be one of the most common repos! Made with <3 by @baris-inandi and @FreeTurk 
+  updated: 01-15-2021
