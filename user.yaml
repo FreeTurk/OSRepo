@@ -21,20 +21,4 @@ meta:
     This repo is a cool template for OSR user files!
   # put in some information about this repo! (required)
 
-  tags:
-  # these are tags! tags are a way to classify OSes. you can use the command:
-  # 'tag <tag_name>' to search using these tags.
-    warn: 
-    # these are just like normal tags but they will be displayed as a warning before downloading an os that has this tag.
-      deprecated: # add items to tag using lists
-        - coolest_os_ever
-      beta:
-        - another_group # you can add tags to whole groups, this will affect all items inside that group.
-    tags:
-    # these tags are tags that wont be shown before downloading but will be visible when using command 'tag <tag_name>'
-      cool_oses:
-        - some_cool_os
-        - another_cool_os
-
-
 # save this file as a .osrepo file and open it using OSR!
