@@ -210,19 +210,22 @@ os:
       5.0:
         link: 'https://osdn.net/frs/redir.php?m=dotsrc&f=%2Fstorage%2Fg%2Fl%2Fli%2Flinuxlite%2F5.0%2Flinux-lite-5.0-64bit.iso'
   Microsoft:
-    winnt:
+    windos:
       Windows 1.0:
         link: 'https://archive.org/download/austin_1.01/1.01.zip'
       Windows 2.03:
         link: 'https://winworldpc.com/download/c3bec3ad-e280-a03a-e280-b05f11c3a4ef/from/c39ac2af-c381-c2bf-1b25-11c3a4e284a2'
       Windows 3.0:
         link: 'https://archive.org/download/windows3.0isofile/Windows%203.0.iso'
-      Windows NT 3.51:
-        link: 'https://winworldpc.com/download/9c67f2a9-a8ec-11ea-8b3c-fa163e9022f0/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
       Windows 95:
         link: 'https://winworldpc.com/download/48373a22-25c3-8911-c3a6-e280947e5254/from/c39ac2af-c381-c2bf-1b25-11c3a4e284a2'
       Windows 98:
         link: 'https://winworldpc.com/download/c3b4c382-3210-e280-9d7b-11c3a4c2ac5a/from/c39ac2af-c381-c2bf-1b25-11c3a4e284a2'
+    winnt:
+      Windows NT 3.51:
+        link: 'https://winworldpc.com/download/9c67f2a9-a8ec-11ea-8b3c-fa163e9022f0/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
+      Windows NT 4.0:
+        link: 'https://winworldpc.com/download/4162c2ba-c3b7-18c3-9a11-c3a4e284a2ef/from/c39ac2af-c381-c2bf-1b25-11c3a4e284a2'
       Windows NT 4.0:
         link: 'https://winworldpc.com/download/416031c2-ab18-c39a-11c3-a4e284a2c3a5/from/c3ae6ee2-8099-713d-3411-c3a6e280947e'
       Windows 2000:
