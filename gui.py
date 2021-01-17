@@ -3,6 +3,7 @@ from PyQt5.QtCore import *
 from PyQt5.QtGui import *
 from PyQt5.QtWidgets import *
 import sys
+from PyQt5 import QtSvg
 
 app = QApplication([])
 
@@ -47,15 +48,15 @@ class ui :
         searchbutton="""
             QPushButton{{
                 border-width: 1px; border-style: solid; border-color: {border};
-                border-bottom-right-radius: 10px; border-bottom-left-radius: 2px; border-top-right-radius: 10px; border-top-left-radius: 2px;
+                border-bottom-right-radius: 12px; border-bottom-left-radius: 2px; border-top-right-radius: 12px; border-top-left-radius: 2px;
                 background: {box} ;}}
             QPushButton:hover{{
                 border-width: 1px; border-style: solid; border-color: {accent};
-                border-bottom-right-radius: 10px; border-bottom-left-radius: 2px; border-top-right-radius: 10px; border-top-left-radius: 2px;
+                border-bottom-right-radius: 12px; border-bottom-left-radius: 2px; border-top-right-radius: 12px; border-top-left-radius: 2px;
                 background:{active};}}
             QPushButton:hover:!pressed{{
                 border-width: 1px; border-style: solid; border-color:{border};
-                border-bottom-right-radius: 10px; border-bottom-left-radius: 2px; border-top-right-radius: 10px; border-top-left-radius: 2px;
+                border-bottom-right-radius: 12px; border-bottom-left-radius: 2px; border-top-right-radius: 12px; border-top-left-radius: 2px;
                 background:{hover};}}
         """.format(box=colors.box[0], accent=colors.accent[0], hover=colors.box_hover[0], border=colors.border[0], active=colors.box_active[0])
         button_close="""
@@ -72,7 +73,7 @@ class ui :
             QLineEdit{{
                 background-color: {box};
                 border-width: 1px; border-style: solid; border-color: {border};
-                border-bottom-right-radius: 2px; border-bottom-left-radius: 10px; border-top-right-radius: 2px; border-top-left-radius: 10px;}}
+                border-bottom-right-radius: 2px; border-bottom-left-radius: 12px; border-top-right-radius: 2px; border-top-left-radius: 12px;}}
         """.format(box=colors.box[0],border=colors.border[0])
 
 tk = Tk()
@@ -103,7 +104,7 @@ def winpos(dispx , dispy , winx=ui.winx , winy=ui.winy) :
     if winy % 2 != 0 : winy += 1
     return int((dispx / 2) - (winx / 2)) , int((dispy / 2) - (winy / 2))
 
-def text(window, content="label", geometry=((0 , 0) , (20 , 20)), qss=None):
+def label(window , content="label" , geometry=((0 , 0) , (20 , 20)) , qss=None):
     pos , size = geometry
     sizex , sizey = size
     posx , posy = pos
@@ -164,9 +165,11 @@ class Window(QMainWindow) :
         self.setFixedSize(ui.winx , ui.winy)
         self.setStyleSheet(
         """
-        font-family: {};
-        font-size: {}px;
-        """.format(ui.font, str(ui.fontsize)))
+        font-family: {font};
+        font-size: {fontsize}px;
+        border: 1px solid {border};
+        """.format(font=ui.font, fontsize=str(ui.fontsize), border=style.colors.border[0]))
+
 
         #header
         # quit button TODO: add an ubuntu-style quit button for linux only
@@ -176,6 +179,11 @@ class Window(QMainWindow) :
         searchbar(self, " search",          ((0,0),  (74,14)),                         qss=style.searchbar,                 margin=(10,10))
         flex_button(self, ">",              ((68,0), (15,14)),      self.search,       qss=style.searchbutton,              margin=(10,10))
 
+        # info label
+        label(self , f"{'138'} OSs found\nLast updated: {'17-1-2021'}" , ((0, 40), (100, 15)) , qss="qproperty-alignment: AlignCenter;border-style:none;") # TODO: assign variables to get last update from meta and number of OSs from index()
+        label(self , r'<img src=.\icons\app\text.svg>' , ((33, 16), (35, 20)) , qss="border-style:none;")
+        label(self , f"{'v1.12.0'}" , ((0, 34), (100, 4)) , qss="qproperty-alignment: AlignCenter;border-style:none;") # TODO: assign 'version' variable here
+
         # buttons
         # main buttons
         flex_button(self , "All OSes" ,     ((0+(ui.margin/8) ,  55) ,                 (50 , 30)) , self.func ,                                                 qss = style.button_modern)
@@ -183,9 +191,6 @@ class Window(QMainWindow) :
         # footer
         flex_button(self , "More..." ,      ((0 ,  90-ui.margin/4) ,                   (82 , 10)) , self.func ,             margin=((ui.margin*1.5), 0),        qss = style.button_modern)
         flex_button(self , "?" ,            ((82-(ui.margin/4),90-ui.margin/4) ,       (18 , 10)) , self.func , "Help" ,    margin=(ui.margin/2, 0),            qss = style.button_modern)
-
-        # info label
-        text(self,f"{'138'} OSs found\nLast updated: {'17-1-2021'}",((0,42),(100,10)), qss="qproperty-alignment: AlignCenter;") # TODO: assign variables to get last update from meta and number of OSs from index()
 
         self.show()
 
