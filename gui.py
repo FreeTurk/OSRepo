@@ -22,14 +22,15 @@ class ui :
         # colors
         class colors:
             # window
-            background =    rgb(34 , 34 , 38)
-            text =          rgb(160 , 160 , 177)
-            border =        rgb(10 , 10 , 10)
-            accent =        rgb(42 , 155 , 250)
+            win_border =    rgb(30,30,32)
+            background =    rgb(18,18,18)
+            text =          rgb(160,160,177)
+            accent =        rgb(187,134,252)
             # box
-            box =           rgb(27 , 28 , 30)
-            box_hover =     rgb(44 , 44 , 48)
-            box_active =    rgb(86 , 92 , 100)
+            box =           rgb(30,30,30)
+            box_hover =     rgb(44,44,48)
+            box_active =    rgb(86,92 ,100)
+            border =        rgb(30,30,30)
 
         # stylesheets
 
@@ -168,7 +169,7 @@ class Window(QMainWindow) :
         font-family: {font};
         font-size: {fontsize}px;
         border: 1px solid {border};
-        """.format(font=ui.font, fontsize=str(ui.fontsize), border=style.colors.border[0]))
+        """.format(font=ui.font, fontsize=str(ui.fontsize), border=style.colors.win_border[0]))
 
 
         #header
