@@ -2,3 +2,6 @@
 desktop.ini
 .idea/
 *.pyc
+user.yaml
+osrepo.yaml
+VARIABLES
