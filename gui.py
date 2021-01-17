@@ -186,7 +186,7 @@ class Window(QMainWindow) :
 
         # buttons
         # main buttons
-        flex_button(self , "All OSes" ,     ((0+(ui.margin/8) ,  55) ,                 (50 , 30)) , self.func ,                                                 qss = style.button_modern)
+        flex_button(self , "All OSs" ,      ((0+(ui.margin/8) ,  55) ,                 (50 , 30)) , self.func ,                                                 qss = style.button_modern)
         flex_button(self , "Download" ,     ((50-(ui.margin/8) , 55) ,                 (50 , 30)) , self.func ,                                                 qss = style.button_modern)
         # footer
         flex_button(self , "More..." ,      ((0 ,  90-ui.margin/4) ,                   (82 , 10)) , self.func ,             margin=((ui.margin*1.5), 0),        qss = style.button_modern)
