@@ -3,7 +3,7 @@ from os import system
 from time import sleep as delay
 from difflib import SequenceMatcher as matcher
 
-generate_temp_yaml = lambda path : shutil.copy2(path, fd, temp_path = tempfile.mkstemp())
+generate_temp_yaml = lambda path : shutil.copy2(path, os.path.join(tempfile.gettempdir() , "osrepo.tmp.yaml"))
 request_download = lambda filename,path : open(filename , 'wb').write(requests.get(path ,allow_redirects=True).content)
 
 def initialize() :
