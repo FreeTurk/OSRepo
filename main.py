@@ -2,9 +2,9 @@ from tkinter import Tk
 from PyQt5.QtCore import *
 from PyQt5.QtGui import *
 from PyQt5.QtWidgets import *
-import yaml , requests , os , webbrowser , string , re , tempfile , shutil , time , sys
 from os import system
 from difflib import SequenceMatcher as matcher
+import yaml , requests , os , webbrowser , string , re , tempfile , shutil , time , sys ,platform
 
 # back end
 
@@ -122,14 +122,18 @@ def remove_prefix(text , prefixstr) :
 
 app = QApplication([])
 
-def rgb(r , g , b) :
-    return "rgb({},{},{})".format(r , g , b) , (r , g , b)
+def rgb(r , g , b) : return f"rgb({r},{g},{b})" , (r , g , b)
+
+def font(os):
+    if os == "windows": return "Segoe UI"
+    elif os == "linux": return "Ubuntu Sans" # uses ubuntu sans if available, uses fallback font if its a distro other than ubuntu
+    elif os == "darwin": return "Helvetica"
+    # uses default font as fallback if font not available
 
 class ui :
     winx , winy = 300 , 380
     margin = 16
-    # TODO: check OS, use Ubuntu, Segoe UI for linux and win respectively
-    font , fontsize = "Segoe UI" , 14
+    font , fontsize = font(platform.system().lower()) , 14
     quitbuttonsize = 32
 
     class style :
@@ -194,7 +198,7 @@ class ui :
 tk = Tk()
 style = ui.style
 
-# Dark Mode
+# Dark Mode by Default
 app.setStyle("Fusion")
 palette = QPalette()
 palette.setColor(QPalette.Window , QColor(*style.colors.background[1]))
